@@ -156,14 +156,7 @@ test(double_dqn=True, num_episodes=4, exploration_max=0.05)
 
 ---
 
-## 📦 Saved Models & Checkpoints
 
-Trained model weights are saved to `DQNResults/` or `DDQNResults/` directories:
-- `DQN.pt` / `DQN1.pt` / `DQN2.pt` — network weights
-- `STATE_MEM.pt`, `ACTION_MEM.pt`, etc. — replay buffer
-- `total_rewards.pkl`, `total_loss.pkl` — training logs
-
----
 
 ## 📐 Environment Preprocessing Pipeline
 
