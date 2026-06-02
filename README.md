@@ -196,7 +196,7 @@ Raw RGB Frame (240×256×3)
 
 **Mohammad Bazzal**  
 ML Engineer | PhD in Telecommunications  
-[LinkedIn](https://linkedin.com/in/mohammad-bazzal) · [GitHub](https://github.com/YOUR_USERNAME)
+[LinkedIn](https://www.linkedin.com/in/mohammad-bazzal-3b768b20b/) · [GitHub](https://github.com/bazzal99)
 
 ---
 
