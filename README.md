@@ -114,8 +114,8 @@ super-mario-drl/
 ### Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/super-mario-drl.git
-cd super-mario-drl
+git clone https://github.com/bazzal99/super-mario-drl.git
+cd Super-Mario-DRL
 pip install -r requirements.txt
 ```
 
