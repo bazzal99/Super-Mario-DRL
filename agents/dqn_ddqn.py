@@ -36,6 +36,24 @@ from ImageToPyTorch import ImageToPyTorch, PixelNormalization
 from BufferWrapper import BufferWrapper
 from DQNSolver import DQNSolver, DQNAgent
 
+# Compatibility patch for Python 3.12+
+import nes_py, gym_super_mario_bros, os
+
+def _patch_nes_py():
+    rom_path = os.path.join(os.path.dirname(nes_py.__file__), '_rom.py')
+    smb_path = os.path.join(os.path.dirname(gym_super_mario_bros.__file__), 'smb_env.py')
+    for path, old, new in [
+        (rom_path, 'self.prg_rom_start + self.prg_rom_size * 2**10', 'int(self.prg_rom_start) + int(self.prg_rom_size) * 2**10'),
+        (rom_path, 'self.chr_rom_start + self.chr_rom_size * 2**10', 'int(self.chr_rom_start) + int(self.chr_rom_size) * 2**10'),
+        (smb_path, 'return self.ram[0x6d] * 0x100 + self.ram[0x86]', 'return int(self.ram[0x6d]) * 0x100 + int(self.ram[0x86])'),
+    ]:
+        with open(path, 'r') as f:
+            content = f.read()
+        with open(path, 'w') as f:
+            f.write(content.replace(old, new))
+
+_patch_nes_py()
+
 
 def create_mario_env(env):
     """Apply preprocessing wrappers to the raw Mario environment."""
