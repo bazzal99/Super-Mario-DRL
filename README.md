@@ -41,18 +41,6 @@ All agents use **frame stacking (4 frames)**, **grayscale preprocessing**, and a
 ### Steps Per Episode & Training Time
 ![Steps](figures/Steps.png) ![Time](figures/Time.png)
 
-### Summary Table
-
-| Metric | DQN | DDQN | PPO |
-|--------|-----|------|-----|
-| Avg. Reward | — | — | — |
-| Avg. Game Score | — | — | — |
-| Avg. Steps/Episode | — | — | — |
-| Training Time (1000 eps) | — | — | — |
-
-> ⚠️ Fill in the table above with your actual metrics from training logs.
-
----
 
 ## 🧠 Agent Architectures
 
