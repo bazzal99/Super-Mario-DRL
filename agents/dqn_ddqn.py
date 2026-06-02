@@ -52,7 +52,7 @@ def _patch_nes_py():
         with open(path, 'w') as f:
             f.write(content.replace(old, new))
 
-_patch_nes_py()
+# _patch_nes_py()
 
 
 def create_mario_env(env):
