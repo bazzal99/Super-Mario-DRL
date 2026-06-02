@@ -111,17 +111,17 @@ pip install -r requirements.txt
 
 ### `requirements.txt`
 ```
-gym==0.21.0
-gym-super-mario-bros==7.3.0
+gym==0.26.0
+gym-super-mario-bros==7.4.0
 nes-py==8.1.8
 torch>=1.10.0
-torchvision
-numpy
-opencv-python
-matplotlib
-tqdm
-Pillow
-stable-baselines3
+torchvision>=0.11.0
+numpy>=1.21.0
+opencv-python>=4.5.0
+matplotlib>=3.4.0
+tqdm>=4.62.0
+Pillow>=8.3.0
+stable-baselines3>=1.5.0
 ```
 
 ---
