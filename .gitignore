@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Model weights & large binary files (use Git LFS if needed)
+*.pt
+*.pth
+*.pkl
+DQNResults/
+DDQNResults/
+PPOResults/
+
+# Generated GIFs during testing (keep demo/ folder separately)
+super_mario_test.gif
+super_mario.gif
+
+# Environment
+.env
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS
+.DS_Store
+Thumbs.db
