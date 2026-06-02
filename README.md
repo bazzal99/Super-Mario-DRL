@@ -10,6 +10,8 @@ A comparative study of three Deep Reinforcement Learning agents — **DQN**, **D
 
 ## 🎮 Demo
 
+A demo of a model under training
+
 ![Mario Demo](demo/super_mario_tested.gif)
 
 ---
